@@ -64,6 +64,18 @@
                 <outputField>Email</outputField>
             </mappingFields>
             <mappingFields>
+                <inputField>PostalCode</inputField>
+                <outputField>MailingPostalCode</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Phone</inputField>
+                <outputField>Phone</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Title</inputField>
+                <outputField>Title</outputField>
+            </mappingFields>
+            <mappingFields>
                 <inputField>FirstName</inputField>
                 <outputField>FirstName</outputField>
             </mappingFields>
@@ -78,18 +90,6 @@
             <mappingFields>
                 <inputField>Street</inputField>
                 <outputField>MailingStreet</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>PostalCode</inputField>
-                <outputField>MailingPostalCode</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>Phone</inputField>
-                <outputField>Phone</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>Title</inputField>
-                <outputField>Title</outputField>
             </mappingFields>
             <outputObject>Contact</outputObject>
         </objectMapping>
