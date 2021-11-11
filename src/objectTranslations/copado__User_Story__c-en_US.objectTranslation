@@ -57,6 +57,14 @@
         <name>copado__Work_Manager_Relations</name>
     </fieldSets>
     <fields>
+        <label><!-- Last Promotion Date (GMT Sortable) --></label>
+        <name>Last_Promotion_Date_GMT_Sortable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
         <label><!-- Acceptance Criteria Status --></label>
         <name>copado__Acceptance_Criteria_Status__c</name>
         <picklistValues>
@@ -703,44 +711,68 @@
         <label><!-- Status --></label>
         <name>copado__Status__c</name>
         <picklistValues>
-            <masterLabel>Approved</masterLabel>
-            <translation><!-- Approved --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Awaiting Approval</masterLabel>
-            <translation><!-- Awaiting Approval --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Backburner</masterLabel>
-            <translation><!-- Backburner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Backlog</masterLabel>
-            <translation><!-- Backlog --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Cancelled</masterLabel>
             <translation><!-- Cancelled --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Completed</masterLabel>
-            <translation><!-- Completed --></translation>
+            <masterLabel>Developer Assigned</masterLabel>
+            <translation><!-- Developer Assigned --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Draft</masterLabel>
-            <translation><!-- Draft --></translation>
+            <masterLabel>Development Complete</masterLabel>
+            <translation><!-- Development Complete --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>In Progress</masterLabel>
-            <translation><!-- In Progress --></translation>
+            <masterLabel>Development In Progress</masterLabel>
+            <translation><!-- Development In Progress --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Ready for testing</masterLabel>
-            <translation><!-- Ready for testing --></translation>
+            <masterLabel>Grooming</masterLabel>
+            <translation><!-- Grooming --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Rejected</masterLabel>
-            <translation><!-- Rejected --></translation>
+            <masterLabel>Grooming Complete</masterLabel>
+            <translation><!-- Grooming Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Merge Conflicts</masterLabel>
+            <translation><!-- No Merge Conflicts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production Released</masterLabel>
+            <translation><!-- Production Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA Complete</masterLabel>
+            <translation><!-- QA Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA In Progress</masterLabel>
+            <translation><!-- QA In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Production</masterLabel>
+            <translation><!-- Ready for Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for QA</masterLabel>
+            <translation><!-- Ready for QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for UAT</masterLabel>
+            <translation><!-- Ready for UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirements Verified</masterLabel>
+            <translation><!-- Requirements Verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT Complete</masterLabel>
+            <translation><!-- UAT Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT In Progress</masterLabel>
+            <translation><!-- UAT In Progress --></translation>
         </picklistValues>
     </fields>
     <fields>

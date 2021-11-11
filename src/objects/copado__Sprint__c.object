@@ -167,6 +167,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>56</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>copado__ActualVelocity__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -408,6 +420,7 @@
         <columns>copado__End_Date__c</columns>
         <columns>copado__Status__c</columns>
         <columns>copado__Working_Days_Left__c</columns>
+        <columns>External_ID__c</columns>
         <columns>copado__Release__c</columns>
         <columns>copado__Team__c</columns>
         <columns>copado__Project__c</columns>
@@ -415,7 +428,6 @@
         <columns>copado__Objective__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>en_US</language>
     </listViews>
     <nameField>
         <label>Sprint Name</label>

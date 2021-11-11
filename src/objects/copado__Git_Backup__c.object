@@ -833,9 +833,9 @@
         <columns>copado__Org__c</columns>
         <columns>LAST_UPDATE</columns>
         <columns>CREATED_DATE</columns>
+        <columns>copado__Git_Snapshot_Permissions__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>en_US</language>
     </listViews>
     <nameField>
         <label>Git Snapshot Name</label>

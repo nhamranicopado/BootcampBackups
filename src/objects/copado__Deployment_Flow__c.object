@@ -162,7 +162,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, all Branch Management features will be enabled in the Deployment Flow.</inlineHelpText>
         <label>Active</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -174,7 +174,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, committing changes on user stories linked to this Pipeline will not be allowed</inlineHelpText>
         <label>Block Commits</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -197,7 +197,7 @@
         <inlineHelpText>If Branch is selected, Branch Management page will work as before, if User Story selected, calculation and result will be based on User Stories.</inlineHelpText>
         <label>Calculate Based on</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -229,7 +229,7 @@
         <relationshipLabel>Pipelines (Commit Job Template)</relationshipLabel>
         <relationshipName>Pipelines2</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -240,7 +240,7 @@
         <inlineHelpText>Selected DX mode will determine scratch metadata sources.</inlineHelpText>
         <label>Copado DX Mode</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -308,7 +308,7 @@
         <relationshipLabel>Pipelines (Deployment Automation)</relationshipLabel>
         <relationshipName>DeploymentPipelines</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -322,7 +322,7 @@
         <relationshipLabel>Pipelines (Deployment Job Template)</relationshipLabel>
         <relationshipName>Pipelines1</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -334,7 +334,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, Deployment Flow Steps best practices validations will be disabled.</inlineHelpText>
         <label>Disable Validations</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -344,7 +344,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Enable Copado DX</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -356,7 +356,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If unchecked, Copado will stop applying Smart Conflict resolution during the promotion process and users will have to manually resolve conflicts again in every subsequent promotion.</inlineHelpText>
         <label>Enable Smart Conflict Resolution</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -368,7 +368,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, Environment names must equal their corresponding Branches in the Deployment Flow Steps.</inlineHelpText>
         <label>Enforce branch/env naming convention</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -412,7 +412,7 @@
         <referenceTo>copado__Git_Repository__c</referenceTo>
         <relationshipName>Deployment_Flows</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -483,7 +483,7 @@
         <label>Main Branch</label>
         <length>255</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -510,7 +510,7 @@
         <inlineHelpText>When a conflicted file cannot be semantically merged during an Auto Resolve, the entire file is overwritten by default. You can choose to overwrite only the conflicting lines and merge the mergeable lines; Copado uses the &quot;Theirs&quot; git merge strategy.</inlineHelpText>
         <label>Auto Resolve Conflict Strategy</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -539,7 +539,7 @@ This value will prefill the order by field on related Promotion record creation 
         <label>Order User Stories by</label>
         <length>255</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -550,7 +550,7 @@ This value will prefill the order by field on related Promotion record creation 
         <externalId>false</externalId>
         <label>Platform</label>
         <required>true</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -595,7 +595,7 @@ This value will prefill the order by field on related Promotion record creation 
         <relationshipLabel>Pipelines</relationshipLabel>
         <relationshipName>Pipelines</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -609,7 +609,7 @@ This value will prefill the order by field on related Promotion record creation 
         <relationshipLabel>Pipelines</relationshipLabel>
         <relationshipName>Pipelines</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -644,7 +644,7 @@ This value will prefill the order by field on related Promotion record creation 
     </listViews>
     <nameField>
         <label>Pipeline Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Pipelines</pluralLabel>
