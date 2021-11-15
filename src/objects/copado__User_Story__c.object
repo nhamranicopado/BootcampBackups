@@ -7499,11 +7499,11 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <columns>copado__User_Story_Title__c</columns>
         <columns>copado__Status__c</columns>
         <columns>copado__Environment__c</columns>
+        <columns>copado__Promote_Change__c</columns>
         <columns>copado__Priority__c</columns>
         <columns>copado__Sprint__c</columns>
         <columns>copado__Project__c</columns>
         <columns>copado__Release__c</columns>
-        <columns>copado__Order__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>copado__Priority__c</field>
