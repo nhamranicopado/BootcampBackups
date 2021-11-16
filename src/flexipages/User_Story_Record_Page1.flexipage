@@ -78,6 +78,18 @@
                 <identifier>RecordRecordTypeIdField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.copado__Exclude_From_CBM__c</fieldItem>
+                <identifier>Recordcopado_Exclude_From_CBM_cField1</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.copado__Stop_Indexing_Metadata__c</fieldItem>
+                <identifier>Recordcopado_Stop_Indexing_Metadata_cField1</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c7fca405-ca66-4cb9-9abc-8f941f6d0bf8</name>
         <type>Facet</type>
     </flexiPageRegions>
