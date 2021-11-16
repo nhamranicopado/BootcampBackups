@@ -145,7 +145,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -162,6 +162,7 @@
         <relationshipLabel>Travel Approvals</relationshipLabel>
         <relationshipName>Travel_Approvals</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -172,6 +173,7 @@
         <label>Destination State</label>
         <length>2</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -184,6 +186,7 @@
         <label>External Id</label>
         <length>18</length>
         <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -194,6 +197,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Out-of-State</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -203,6 +207,7 @@
         <externalId>false</externalId>
         <label>Purpose of Trip</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -212,6 +217,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -256,6 +262,7 @@
         <externalId>false</externalId>
         <label>Trip End Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -265,6 +272,7 @@
         <externalId>false</externalId>
         <label>Trip Start Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -284,14 +292,44 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Open_Out_of_State_Travel_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Status__c</columns>
+        <columns>Destination_State__c</columns>
+        <columns>Trip_Start_Date__c</columns>
+        <columns>Trip_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Out_of_State__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Approved,Rejected</value>
+        </filters>
+        <label>Open Out of State Travel Requests</label>
+    </listViews>
     <nameField>
         <displayFormat>TA-{00000}</displayFormat>
         <label>Travel Approval #</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Travel Approvals</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Purpose_of_Trip__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Department__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Destination_State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Trip_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Trip_End_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Destination_State_must_be_uppercase</fullName>
