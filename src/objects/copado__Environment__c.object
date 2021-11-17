@@ -619,6 +619,8 @@
         <columns>CREATED_DATE</columns>
         <columns>LAST_UPDATE</columns>
         <columns>copado__Maximum_SCA_Score__c</columns>
+        <columns>copado__Compliance_Rule_Group__c</columns>
+        <columns>copado__Compliance_Scan_Events__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
