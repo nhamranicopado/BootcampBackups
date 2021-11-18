@@ -36,6 +36,9 @@
                         <valueListItems>
                             <value>CustomButton.copado__User_Story__c.copado__Add_Metadata</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.copado__User_Story__c.copado__Commit_Data</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
