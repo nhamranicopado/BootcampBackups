@@ -32,6 +32,10 @@
         <name>Purpose_of_Trip__c</name>
     </fields>
     <fields>
+        <label><!-- Status Indicator --></label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
         <label><!-- Status --></label>
         <name>Status__c</name>
         <picklistValues>
@@ -60,6 +64,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Total Expenses --></label>
+        <name>Total_Expenses__c</name>
+    </fields>
+    <fields>
         <label><!-- Trip End Date --></label>
         <name>Trip_End_Date__c</name>
     </fields>
@@ -78,5 +86,9 @@
     <validationRules>
         <errorMessage><!-- Destination State must be entered in UPPERCASE --></errorMessage>
         <name>Destination_State_must_be_uppercase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Trip end date must be greater than or equal to start date --></errorMessage>
+        <name>Trip_end_date_after_start_date</name>
     </validationRules>
 </CustomObjectTranslation>
