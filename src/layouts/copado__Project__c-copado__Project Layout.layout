@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customButtons>copadoccmint__Sync_External_User_Stories</customButtons>
+    <customButtons>copadoccmint__Sync_External_User_Stories_With_Sprint</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -62,19 +64,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Project Summary</label>
-        <layoutColumns>
-            <layoutItems>
-                <reportChartComponent>
-                    <cacheData>false</cacheData>
-                    <contextFilterableField>FK_CUSTENT_ID</contextFilterableField>
-                    <hideOnError>true</hideOnError>
-                    <includeContext>true</includeContext>
-                    <reportName>Story_Point_totals_by_Project_and_Status</reportName>
-                    <showTitle>true</showTitle>
-                    <size>SMALL</size>
-                </reportChartComponent>
-            </layoutItems>
-        </layoutColumns>
+        <layoutColumns/>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -96,6 +86,48 @@
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Jira Integration</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copadoccmint__JQL_Extended_Filter__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copadoccmint__Enable_Logs__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copadoccmint__Enable_Community_User__c</field>
+            </layoutItems>
+            <layoutItems>
+                <reportChartComponent>
+                    <cacheData>false</cacheData>
+                    <contextFilterableField>FK_CUSTENT_ID</contextFilterableField>
+                    <hideOnError>true</hideOnError>
+                    <includeContext>true</includeContext>
+                    <reportName>Story_Point_totals_by_Project_and_Status</reportName>
+                    <showTitle>true</showTitle>
+                    <size>SMALL</size>
+                </reportChartComponent>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copadoccmint__Project_External_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>copadoccmint__Copado_Integration_Setting__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -121,6 +153,26 @@
         <fields>copado__Status__c</fields>
         <fields>copado__Story_points__c</fields>
         <relatedList>copado__Sprint__c.copado__Project__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copadoccmint__Salesforce_Field_Name__c</fields>
+        <fields>copadoccmint__Exclude_from_su__c</fields>
+        <fields>copadoccmint__Third_Party_Field_Name__c</fields>
+        <fields>copadoccmint__Exclude_from_tpu__c</fields>
+        <fields>CREATEDBY_USER</fields>
+        <fields>UPDATEDBY_USER</fields>
+        <relatedList>copadoccmint__Field_Mapping__c.copadoccmint__Project__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copadoccmint__Salesforce_Record_Type_Name__c</fields>
+        <fields>copadoccmint__Third_Party_Record_Type_Name__c</fields>
+        <relatedList>copadoccmint__Record_Type_Mapping__c.copadoccmint__Project__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>copadoccmint__Callout_Log__c.copadoccmint__Project__c</relatedList>
     </relatedLists>
     <relatedLists>
         <customButtons>copado__Mass_Add_User_Stories</customButtons>
@@ -177,7 +229,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h24000001ec7S</masterLabel>
+        <masterLabel>00h7Q0000013pTZ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

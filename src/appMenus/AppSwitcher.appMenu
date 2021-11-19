@@ -140,4 +140,16 @@
         <name>copado__Copado_Selenium_Testing</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Travel_App</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>copadoccmint__Copado_Integrations</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>copadovsm__Value_Stream_Maps</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
