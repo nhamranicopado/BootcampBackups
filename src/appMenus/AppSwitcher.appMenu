@@ -149,7 +149,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>copadovsm__Value_Stream_Maps</name>
+        <name>copado__CopadoTests</name>
         <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>
