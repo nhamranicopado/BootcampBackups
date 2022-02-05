@@ -203,7 +203,6 @@
     </fields>
     <fields>
         <fullName>StatusCode</fullName>
-        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>SubCategory</fullName>

@@ -304,6 +304,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__ArtifactsSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__AttachmentTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -477,6 +481,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>copado__CalculateSnapshotDifferences</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__CallbackHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -841,14 +849,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>copado__CreateExecutionTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>copado__CreateExtensionTestCtrl</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>copado__CreateExtensionTestCtrlTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1676,6 +1676,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__FflibExtension</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__FflibExtensionTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__FilterComponentController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1704,6 +1712,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__FunctionComponentController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__FunctionComponentControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__FunctionCreditHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__FunctionExecutionQueueable</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1721,6 +1741,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>copado__FunctionStepExecutionCallback</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__FunctionWebEvent</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -2168,6 +2192,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__MaskApiKey</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__MaskApiKeyTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__MassAddDestOrgs</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2364,11 +2396,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__PackageCreateAction</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__PackageCreateActionTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__PackageDependency</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>copado__PackageDetail</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__PackageHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3001,6 +3045,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>copado__SalesforceAPIProxyResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__SalesforceAPIProxySoapCallout</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -4372,6 +4420,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__ValidateChangesCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__ValidateChangesCtrlTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__ValidateCommitRequirements</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4485,6 +4541,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>copado__WizardUtilsController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>copado__WizardUtilsControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -5517,6 +5577,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>ChangeRequest.RelatedItemAutonumberMaster</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ChangeRequest.RemediationPlan</field>
         <readable>true</readable>
@@ -6300,6 +6365,11 @@
         <editable>true</editable>
         <field>Incident.PriorityOverrideReason</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Incident.RelatedItemAutonumberMaster</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7177,6 +7247,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Problem.RelatedItemAutonumberMaster</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Problem.ResolutionDateTime</field>
         <readable>true</readable>
@@ -7520,6 +7595,26 @@
         <editable>true</editable>
         <field>ServiceContract.TotalPrice</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.AccountId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.IsActive</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.LocationId</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8270,6 +8365,101 @@
         <editable>true</editable>
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlan.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlan.WorkOrderLineItemId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlan.WorkPlanTemplateId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlanTemplate.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlanTemplate.IsActive</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlanTemplate.RelativeExecutionOrder</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkPlanTemplateEntry.ExecutionOrder</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.ActionDefinition</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.ActionType</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.EndTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.PausedFlowInterviewId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.StartTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.WorkOrderLineItemId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStep.WorkPlanExecutionOrder</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStepTemplate.ActionDefinition</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStepTemplate.ActionType</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStepTemplate.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkStepTemplate.IsActive</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -10788,6 +10978,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__MultiCloudAutomation__mdt.copado__PackageCreateApiName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__MultiCloudAutomation__mdt.copado__PackageImportAPIName__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -11498,6 +11693,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__Result__c.copado__Parent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__Result__c.copado__Progress_Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12154,6 +12354,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__Static_Code_Analysis_Settings__c.copado__CodeScan_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Static_Code_Analysis_Settings__c.copado__ReportIssuesFromLatestCommit__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -15214,6 +15419,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-ServiceResource</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-SocialPersona</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -15255,6 +15464,18 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-WorkOrder</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WorkPlan</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WorkPlanTemplate</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WorkStepTemplate</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
