@@ -149,6 +149,8 @@
         <fields>copadovsm__Primary_Field__c</fields>
         <fields>copadovsm__Active__c</fields>
         <fields>copadovsm__Activation_Datetime__c</fields>
+        <fields>copadovsm__Last_Execution_Datetime__c</fields>
+        <fields>copadovsm__Last_Snapshot_Execution_Datetime__c</fields>
         <label>VSM Header</label>
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -237,6 +239,19 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>copadovsm__Error_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Error Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>copadovsm__Excluded_Criteria__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -253,7 +268,18 @@
         <deprecated>false</deprecated>
         <description>Last ValueStreamMapFieldHistoryBatch class execution date time</description>
         <externalId>false</externalId>
-        <label>Last Execution Datetime</label>
+        <label>Last Recalculation Execution Datetime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>copadovsm__Last_Snapshot_Execution_Datetime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Snapshot Execution Datetime</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -306,7 +332,7 @@
         <fullName>copadovsm__Recalculation_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Recalculation Status</label>
+        <label>Value Stream Map Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -319,12 +345,12 @@
                 <value>
                     <fullName>Not Required</fullName>
                     <default>true</default>
-                    <label>Not Required</label>
+                    <label>Recalculation Not Required</label>
                 </value>
                 <value>
                     <fullName>Required</fullName>
                     <default>false</default>
-                    <label>Required</label>
+                    <label>Recalculation Required</label>
                 </value>
                 <value>
                     <fullName>Calculating</fullName>
@@ -334,7 +360,17 @@
                 <value>
                     <fullName>Failed</fullName>
                     <default>false</default>
-                    <label>Failed</label>
+                    <label>Recalculation Failed</label>
+                </value>
+                <value>
+                    <fullName>Snapshot Failed</fullName>
+                    <default>false</default>
+                    <label>Snapshot Failed</label>
+                </value>
+                <value>
+                    <fullName>Snapshot In Progress</fullName>
+                    <default>false</default>
+                    <label>Snapshot In Progress</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -352,6 +388,17 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copadovsm__Snapshot_Mode_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Snapshot Mode</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>copadovsm__Start_Date__c</fullName>

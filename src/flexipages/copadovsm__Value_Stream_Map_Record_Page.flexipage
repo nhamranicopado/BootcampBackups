@@ -9,27 +9,39 @@
                         <valueListItems>
                             <value>Edit</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Delete</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Activate</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Active__c}</leftValue>
                                     <operator>EQUAL</operator>
@@ -40,12 +52,17 @@
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
                                 </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
+                                </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Deactivate</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Active__c}</leftValue>
                                     <operator>EQUAL</operator>
@@ -56,45 +73,131 @@
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
                                 </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>copadovsm__Value_Stream_Map__c.copadovsm__Enable_Snapshot</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Snapshot_Mode_Enabled__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>false</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Active__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>copadovsm__Value_Stream_Map__c.copadovsm__Generate_Snapshot</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Snapshot_Mode_Enabled__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Active__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Recalculate</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2 AND 3</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Active__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Configure_Thresholds</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Configure_Metrics</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>copadovsm__Value_Stream_Map__c.copadovsm__Add_New_Metric</value>
                             <visibilityRule>
+                                <booleanFilter>1 AND 2</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                                     <operator>NE</operator>
                                     <rightValue>Calculating</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                                    <operator>NE</operator>
+                                    <rightValue>Snapshot In Progress</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -129,173 +232,9 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Last_Execution_Datetime__c</fieldItem>
-                <identifier>RecordLast_Execution_Datetime__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Recalculation_Status__c</fieldItem>
-                <identifier>RecordRecalculation_Status__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-16853e68-0ef2-4b61-9c83-7f9fe5266d56</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.OwnerId</fieldItem>
-                <identifier>RecordOwnerIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Description__c</fieldItem>
-                <identifier>RecordDescription__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-cf14ae64-49b3-4ebe-a5c8-0e35d4518924</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-16853e68-0ef2-4b61-9c83-7f9fe5266d56</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-cf14ae64-49b3-4ebe-a5c8-0e35d4518924</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-97176653-8fc1-4852-a7dc-d6a0a1758d43</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Object__c</fieldItem>
-                <identifier>RecordObject__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Record_Types__c</fieldItem>
-                <identifier>RecordRecord_Types__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Activation_Datetime__c</fieldItem>
-                <identifier>RecordActivation_Datetime__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.CreatedById</fieldItem>
-                <identifier>RecordCreatedByIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-2cc0c0db-c4f4-40bd-8b87-5131466ebf73</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Primary_Field__c</fieldItem>
-                <identifier>RecordPrimary_Field__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Operator_Field__c</fieldItem>
-                <identifier>RecordOperator_Field__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.copadovsm__Active__c</fieldItem>
-                <identifier>RecordActive__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.LastModifiedById</fieldItem>
-                <identifier>RecordLastModifiedByIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-605257d9-8a26-40a9-b74a-9d0b4a2477ed</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-2cc0c0db-c4f4-40bd-8b87-5131466ebf73</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-605257d9-8a26-40a9-b74a-9d0b4a2477ed</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column4</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-63765823-74a9-4d6e-a5c7-ed6ccce2dcdb</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-97176653-8fc1-4852-a7dc-d6a0a1758d43</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Information</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-63765823-74a9-4d6e-a5c7-ed6ccce2dcdb</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Setup</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection2</identifier>
+                <componentName>force:detailPanel</componentName>
+                <identifier>force_detailPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>detailTabContent</name>
@@ -437,10 +376,16 @@
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
                 <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                         <operator>NE</operator>
                         <rightValue>Calculating</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Snapshot In Progress</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -454,6 +399,22 @@
                         <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>Calculating</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>recordId</name>
+                </componentInstanceProperties>
+                <componentName>copadovsm:vsmGeneratingSnapshotView</componentName>
+                <identifier>vsmGeneratingSnapshotView</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Snapshot In Progress</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>

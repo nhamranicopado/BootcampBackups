@@ -26,12 +26,20 @@
         <name>copadovsm__Description__c</name>
     </fields>
     <fields>
+        <label><!-- Error Message --></label>
+        <name>copadovsm__Error_Message__c</name>
+    </fields>
+    <fields>
         <label><!-- Excluded Criteria --></label>
         <name>copadovsm__Excluded_Criteria__c</name>
     </fields>
     <fields>
-        <label><!-- Last Execution Datetime --></label>
+        <label><!-- Last Recalculation Execution Datetime --></label>
         <name>copadovsm__Last_Execution_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Snapshot Execution Datetime --></label>
+        <name>copadovsm__Last_Snapshot_Execution_Datetime__c</name>
     </fields>
     <fields>
         <help><!-- Primary object that will be used for the Value Stream Map. Each VSM will have a primary object and primary field. --></help>
@@ -49,29 +57,41 @@
         <name>copadovsm__Primary_Field__c</name>
     </fields>
     <fields>
-        <label><!-- Recalculation Status --></label>
+        <label><!-- Value Stream Map Status --></label>
         <name>copadovsm__Recalculation_Status__c</name>
         <picklistValues>
             <masterLabel>Calculating</masterLabel>
             <translation><!-- Calculating --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Failed</masterLabel>
-            <translation><!-- Failed --></translation>
+            <masterLabel>Recalculation Failed</masterLabel>
+            <translation><!-- Recalculation Failed --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Not Required</masterLabel>
-            <translation><!-- Not Required --></translation>
+            <masterLabel>Recalculation Not Required</masterLabel>
+            <translation><!-- Recalculation Not Required --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Required</masterLabel>
-            <translation><!-- Required --></translation>
+            <masterLabel>Recalculation Required</masterLabel>
+            <translation><!-- Recalculation Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot Failed</masterLabel>
+            <translation><!-- Snapshot Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot In Progress</masterLabel>
+            <translation><!-- Snapshot In Progress --></translation>
         </picklistValues>
     </fields>
     <fields>
         <help><!-- Record types are associated with the Primary Object selected. These are the record types that should be included in Value Stream Map configuration. --></help>
         <label><!-- Record Types --></label>
         <name>copadovsm__Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Mode --></label>
+        <name>copadovsm__Snapshot_Mode_Enabled__c</name>
     </fields>
     <fields>
         <label><!-- Start Date --></label>
