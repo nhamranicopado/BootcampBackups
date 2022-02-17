@@ -5922,6 +5922,102 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>TDE_US_status__c</fullName>
+        <externalId>false</externalId>
+        <label>TDE US status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>To Do</fullName>
+                    <default>false</default>
+                    <label>To Do</label>
+                </value>
+                <value>
+                    <fullName>Dev In Progress</fullName>
+                    <default>false</default>
+                    <label>Dev In Progress</label>
+                </value>
+                <value>
+                    <fullName>Ready Integration</fullName>
+                    <default>false</default>
+                    <label>Ready Integration</label>
+                </value>
+                <value>
+                    <fullName>Integration Functional Test</fullName>
+                    <default>false</default>
+                    <label>Integration Functional Test</label>
+                </value>
+                <value>
+                    <fullName>Integration Done</fullName>
+                    <default>false</default>
+                    <label>Integration Done</label>
+                </value>
+                <value>
+                    <fullName>Ready Qualification</fullName>
+                    <default>false</default>
+                    <label>Ready Qualification</label>
+                </value>
+                <value>
+                    <fullName>Qualification Functional Test</fullName>
+                    <default>false</default>
+                    <label>Qualification Functional Test</label>
+                </value>
+                <value>
+                    <fullName>Qualification Done</fullName>
+                    <default>false</default>
+                    <label>Qualification Done</label>
+                </value>
+                <value>
+                    <fullName>Ready Preprod</fullName>
+                    <default>false</default>
+                    <label>Ready Preprod</label>
+                </value>
+                <value>
+                    <fullName>Preprod Business Test</fullName>
+                    <default>false</default>
+                    <label>Preprod Business Test</label>
+                </value>
+                <value>
+                    <fullName>Preprod Done</fullName>
+                    <default>false</default>
+                    <label>Preprod Done</label>
+                </value>
+                <value>
+                    <fullName>Ready To Release</fullName>
+                    <default>false</default>
+                    <label>Ready To Release</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Ready Hotfix</fullName>
+                    <default>false</default>
+                    <label>Ready Hotfix</label>
+                </value>
+                <value>
+                    <fullName>Hotfix In Progress</fullName>
+                    <default>false</default>
+                    <label>Hotfix In Progress</label>
+                </value>
+                <value>
+                    <fullName>Hotfix Done</fullName>
+                    <default>false</default>
+                    <label>Hotfix Done</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>copado__Acceptance_Criteria_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -7643,6 +7739,73 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <active>true</active>
         <label>Bug</label>
         <picklistValues>
+            <picklist>TDE_US_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Business Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Hotfix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Preprod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready To Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Do</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>copado__Acceptance_Criteria_Status__c</picklist>
             <values>
                 <fullName>Accepted</fullName>
@@ -8117,6 +8280,73 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Investigation</fullName>
         <active>true</active>
         <label>Investigation</label>
+        <picklistValues>
+            <picklist>TDE_US_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Business Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Hotfix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Preprod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready To Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Do</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>copado__Acceptance_Criteria_Status__c</picklist>
             <values>
@@ -8593,6 +8823,73 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <active>true</active>
         <label>User Story</label>
         <picklistValues>
+            <picklist>TDE_US_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Business Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Hotfix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Preprod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready To Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Do</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>copado__Acceptance_Criteria_Status__c</picklist>
             <values>
                 <fullName>Accepted</fullName>
@@ -9067,6 +9364,73 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Utility</fullName>
         <active>true</active>
         <label>Utility</label>
+        <picklistValues>
+            <picklist>TDE_US_status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dev In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotfix In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integration Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Business Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preprod Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Functional Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Hotfix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Integration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Preprod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready To Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To Do</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>copado__Acceptance_Criteria_Status__c</picklist>
             <values>

@@ -69,6 +69,74 @@
         <name>Sequence__c</name>
     </fields>
     <fields>
+        <label><!-- TDE US status --></label>
+        <name>TDE_US_status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dev In Progress</masterLabel>
+            <translation><!-- Dev In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotfix Done</masterLabel>
+            <translation><!-- Hotfix Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotfix In Progress</masterLabel>
+            <translation><!-- Hotfix In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Done</masterLabel>
+            <translation><!-- Integration Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Functional Test</masterLabel>
+            <translation><!-- Integration Functional Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preprod Business Test</masterLabel>
+            <translation><!-- Preprod Business Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preprod Done</masterLabel>
+            <translation><!-- Preprod Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification Done</masterLabel>
+            <translation><!-- Qualification Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification Functional Test</masterLabel>
+            <translation><!-- Qualification Functional Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready Hotfix</masterLabel>
+            <translation><!-- Ready Hotfix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready Integration</masterLabel>
+            <translation><!-- Ready Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready Preprod</masterLabel>
+            <translation><!-- Ready Preprod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready Qualification</masterLabel>
+            <translation><!-- Ready Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready To Release</masterLabel>
+            <translation><!-- Ready To Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Do</masterLabel>
+            <translation><!-- To Do --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Acceptance Criteria Status --></label>
         <name>copado__Acceptance_Criteria_Status__c</name>
         <picklistValues>
