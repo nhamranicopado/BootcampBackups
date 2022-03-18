@@ -7724,6 +7724,12 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         </filters>
         <label>Cli Listview</label>
     </listViews>
+    <listViews>
+        <fullName>new_list_view</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>new list view</label>
+    </listViews>
     <nameField>
         <displayFormat>US-{0000000}</displayFormat>
         <label>User Story Reference</label>
