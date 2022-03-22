@@ -7692,6 +7692,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <columns>Sequence__c</columns>
         <columns>copado__User_Story_Title__c</columns>
         <columns>copado__Status__c</columns>
+        <columns>copado__Has_Apex_Code__c</columns>
         <columns>copado__Environment__c</columns>
         <columns>copado__Is_Bundle__c</columns>
         <columns>copado__Promote_Change__c</columns>
