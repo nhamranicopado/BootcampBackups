@@ -86,6 +86,10 @@
             <masterLabel>Manual</masterLabel>
             <translation><!-- Manual --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- User Story --></label>
