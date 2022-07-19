@@ -156,6 +156,26 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>copado__AcceptanceCriteria__c</fullName>
+        <defaultValue>&quot;{}&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Acceptance Criteria</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copado__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>copado__Details__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -170,8 +190,8 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <inlineHelpText>Select the type of Application that relates to the Extension.</inlineHelpText>
-        <label>Copado Application</label>
-        <required>false</required>
+        <label>Copado Phase</label>
+        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -182,6 +202,26 @@
                     <fullName>Test</fullName>
                     <default>false</default>
                     <label>Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__ExtensionTool__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Extension Tool</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -210,8 +250,9 @@
     <fields>
         <fullName>copado__Status__c</fullName>
         <deprecated>false</deprecated>
+        <description>Deprecated</description>
         <externalId>false</externalId>
-        <label>Status</label>
+        <label>Status - Deprecated</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -236,6 +277,17 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__TestType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Test Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>copado__Type__c</fullName>
@@ -302,5 +354,12 @@
         <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>copado__PreventUpdatingExtensionTool</fullName>
+        <active>true</active>
+        <description>This rule prevents users from modifying the Tool Configuration after the Extension Configuration is activated.</description>
+        <errorConditionFormula>AND( copado__Active__c , ISCHANGED( copado__ExtensionTool__c ) )</errorConditionFormula>
+        <errorMessage>This Extension Tool cannot be modified. Please create a new Extension Configuration record instead.</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

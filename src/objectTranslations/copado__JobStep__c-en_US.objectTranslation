@@ -29,6 +29,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Git RepositoryId --></label>
+        <name>copado__Git_RepositoryId__c</name>
+    </fields>
+    <fields>
         <label><!-- Git Repository --></label>
         <name>copado__Git_Repository__c</name>
     </fields>
@@ -51,8 +55,34 @@
         <name>copado__Parent_Owner_Id__c</name>
     </fields>
     <fields>
+        <help><!-- Stores pipeline Id linked to job execution --></help>
+        <label><!-- PipelineId --></label>
+        <name>copado__PipelineId__c</name>
+    </fields>
+    <fields>
         <label><!-- Pipeline Id --></label>
         <name>copado__Pipeline_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The scope, filter, and acceptance criteria defined for the quality gate rule referenced in the job step. --></help>
+        <label><!-- Quality Gate Rule Condition --></label>
+        <name>copado__Quality_Gate_Rule_Condition__c</name>
+        <relationshipLabel><!-- Job Steps --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The quality check performed by the job step. --></help>
+        <label><!-- Quality Gate Rule --></label>
+        <name>copado__Quality_Gate_Rule__c</name>
+        <relationshipLabel><!-- Job Steps --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Register what resources are available after the step completes successfully. You can apply quality gates to these resources locally within the Function context. --></help>
+        <label><!-- Resource Observations --></label>
+        <name>copado__Resource_Observations__c</name>
+        <picklistValues>
+            <masterLabel>Local branch ready</masterLabel>
+            <translation><!-- Local branch ready --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Result Data Json --></label>
@@ -70,6 +100,11 @@
     <fields>
         <label><!-- Status --></label>
         <name>copado__Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id of the related job execution that performs additional steps and operations, such as running a test. --></help>
+        <label><!-- Sub Job Execution --></label>
+        <name>copado__Sub_Job_Execution__c</name>
     </fields>
     <fields>
         <label><!-- Behaviour --></label>
